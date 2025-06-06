@@ -173,12 +173,12 @@
     <key id="key_toggleMute" data-l10n-id="mute-toggle-shortcut" command="cmd_toggleMute" modifiers="control"/>
     <key id="key_undo"
          data-l10n-id="text-action-undo-shortcut"
-         modifiers="accel"
+         modifiers="control"
          internal="true"/>
     <key id="key_redo"
 #ifdef XP_UNIX
          data-l10n-id="text-action-undo-shortcut"
-         modifiers="accel,shift"
+         modifiers="control,shift"
 #else
          data-l10n-id="text-action-redo-shortcut"
          modifiers="accel"
@@ -186,15 +186,15 @@
          internal="true"/>
     <key id="key_cut"
          data-l10n-id="text-action-cut-shortcut"
-         modifiers="accel"
+         modifiers="control"
          internal="true"/>
     <key id="key_copy"
          data-l10n-id="text-action-copy-shortcut"
-         modifiers="accel"
+         modifiers="control"
          internal="true"/>
     <key id="key_paste"
          data-l10n-id="text-action-paste-shortcut"
-         modifiers="accel"
+         modifiers="control"
          internal="true"/>
     <key id="key_delete" keycode="VK_DELETE" command="cmd_delete" reserved="false"/>
     <key id="key_selectAll" data-l10n-id="text-action-select-all-shortcut" modifiers="accel" internal="true"/>
@@ -228,15 +228,6 @@
     <key id="key_exitFullScreen_old" data-l10n-id="full-screen-shortcut" command="View:FullScreen" modifiers="accel,shift" reserved="true" disabled="true"/>
     <key id="key_exitFullScreen_compat" keycode="VK_F11" command="View:FullScreen" reserved="true" disabled="true"/>
 #endif
-    <key id="key_toggleReaderMode"
-         command="View:ReaderView"
-#ifdef XP_WIN
-         data-l10n-id="reader-mode-toggle-shortcut-windows"
-#else
-         data-l10n-id="reader-mode-toggle-shortcut-other"
-         modifiers="accel,alt"
-#endif
-         disabled="true"/>
 
 #ifndef XP_MACOSX
     <key id="key_togglePictureInPicture" data-l10n-id="picture-in-picture-toggle-shortcut" command="View:PictureInPicture" modifiers="accel,shift"/>

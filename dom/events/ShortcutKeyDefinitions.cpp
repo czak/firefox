@@ -172,11 +172,11 @@ ShortcutKeyData ShortcutKeys::sInputHandlers[] = {
     /**************************************************************************
      * Common editor commands in <input>.
      **************************************************************************/
-    {u"keypress", nullptr, u"c", u"accel",       u"cmd_copy"},   // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"x", u"accel",       u"cmd_cut"},    // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"v", u"accel",       u"cmd_paste"},  // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"z", u"accel",       u"cmd_undo"},   // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"z", u"accel,shift", u"cmd_redo"},   // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"c", u"control",       u"cmd_copy"},   // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"x", u"control",       u"cmd_cut"},    // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"v", u"control",       u"cmd_paste"},  // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"z", u"control",       u"cmd_undo"},   // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"z", u"control,shift", u"cmd_redo"},   // Win, macOS, Linux, Android, Emacs
 
     {u"keypress", nullptr, u"v", u"accel,shift",     u"cmd_paste"},  // Win, macOS, Linux, Android, Emacs
 // Mac uses Option+Shift+Command+V for Paste and Match Style
@@ -361,11 +361,11 @@ ShortcutKeyData ShortcutKeys::sTextAreaHandlers[] = {
     /**************************************************************************
      * Common editor commands in <textarea>.
      **************************************************************************/
-    {u"keypress", nullptr, u"c", u"accel",       u"cmd_copy"},       // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"x", u"accel",       u"cmd_cut"},        // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"v", u"accel",       u"cmd_paste"},      // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"z", u"accel",       u"cmd_undo"},       // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"z", u"accel,shift", u"cmd_redo"},       // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"c", u"control",       u"cmd_copy"},       // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"x", u"control",       u"cmd_cut"},        // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"v", u"control",       u"cmd_paste"},      // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"z", u"control",       u"cmd_undo"},       // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"z", u"control,shift", u"cmd_redo"},       // Win, macOS, Linux, Android, Emacs
 
 #if defined(XP_WIN) || defined(MOZ_WIDGET_GTK) ||\
     defined(USE_EMACS_KEY_BINDINGS)
@@ -556,12 +556,12 @@ ShortcutKeyData ShortcutKeys::sBrowserHandlers[] = {
     /**************************************************************************
      * Common editor commands in non-editable element.
      **************************************************************************/
-    {u"keypress", nullptr, u"c", u"accel",       u"cmd_copy"},              // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"x", u"accel",       u"cmd_cut"},               // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"v", u"accel",       u"cmd_paste"},             // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"v", u"accel,shift", u"cmd_pasteNoFormatting"}, // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"z", u"accel",       u"cmd_undo"},              // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"z", u"accel,shift", u"cmd_redo"},              // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"c", u"control",       u"cmd_copy"},              // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"x", u"control",       u"cmd_cut"},               // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"v", u"control",       u"cmd_paste"},             // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"v", u"control,shift", u"cmd_pasteNoFormatting"}, // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"z", u"control",       u"cmd_undo"},              // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"z", u"control,shift", u"cmd_redo"},              // Win, macOS, Linux, Android, Emacs
 
 // Mac uses Option+Shift+Command+V for Paste and Match Style
 #if defined(MOZ_WIDGET_COCOA)
@@ -725,12 +725,12 @@ ShortcutKeyData ShortcutKeys::sEditorHandlers[] = {
     /**************************************************************************
      * Common editor commands in HTMLEditor.
      **************************************************************************/
-    {u"keypress", nullptr, u"c", u"accel",           u"cmd_copy"},               // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"x", u"accel",           u"cmd_cut"},                // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"v", u"accel",           u"cmd_paste"},              // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"v", u"accel,shift",     u"cmd_pasteNoFormatting"},  // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"z", u"accel",           u"cmd_undo"},               // Win, macOS, Linux, Android, Emacs
-    {u"keypress", nullptr, u"z", u"accel,shift",     u"cmd_redo"},               // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"c", u"control",           u"cmd_copy"},               // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"x", u"control",           u"cmd_cut"},                // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"v", u"control",           u"cmd_paste"},              // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"v", u"control,shift",     u"cmd_pasteNoFormatting"},  // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"z", u"control",           u"cmd_undo"},               // Win, macOS, Linux, Android, Emacs
+    {u"keypress", nullptr, u"z", u"control,shift",     u"cmd_redo"},               // Win, macOS, Linux, Android, Emacs
 
 // Mac uses Option+Shift+Command+V for Paste and Match Style
 #if defined(MOZ_WIDGET_COCOA)

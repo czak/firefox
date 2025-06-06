@@ -31,7 +31,7 @@ var DevelopmentHelpers = {
     let key = document.createXULElement("key");
     key.setAttribute("id", "key_quickRestart");
     key.setAttribute("key", "r");
-    key.setAttribute("modifiers", "accel,alt");
+    key.setAttribute("modifiers", "control,alt");
     key.setAttribute("command", "cmd_quickRestart");
     document.getElementById("mainKeyset").prepend(key);
 

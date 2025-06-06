@@ -33,7 +33,7 @@ search-focus-shortcut =
 #   - web search
 #   - find in page
 find-shortcut =
-    .key = F
+    .key = S
 
 search-find-again-shortcut =
     .key = G
@@ -69,7 +69,7 @@ file-open-shortcut =
     .key = O
 
 save-page-shortcut =
-    .key = S
+    .key = {""}
 
 page-source-shortcut =
     .key = U
@@ -126,7 +126,7 @@ reader-mode-toggle-shortcut-windows =
     .keycode = VK_F9
 
 reader-mode-toggle-shortcut-other =
-    .key = R
+    .key = {""}
 
 picture-in-picture-toggle-shortcut-mac =
     .key = ]

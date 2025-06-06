@@ -286,7 +286,6 @@ export class UrlbarController {
     const isMac = AppConstants.platform == "macosx";
     // Handle readline/emacs-style navigation bindings on Mac.
     if (
-      isMac &&
       this.view.isOpen &&
       event.ctrlKey &&
       (event.key == "n" || event.key == "p")

@@ -68,7 +68,7 @@ export var ShortcutUtils = {
         haveCloverLeaf = true;
       } else {
         elemString +=
-          lazy.PlatformKeys.GetStringFromName("VK_CONTROL") +
+          lazy.PlatformKeys.GetStringFromName("VK_ALT") +
           lazy.PlatformKeys.GetStringFromName("MODIFIER_SEPARATOR");
       }
     }

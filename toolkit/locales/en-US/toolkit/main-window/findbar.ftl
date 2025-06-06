@@ -31,9 +31,9 @@ findbar-match-diacritics =
     .tooltiptext = Distinguish between accented letters and their base letters (for example, when searching for “resume”, “résumé” will not be matched)
 
 findbar-entire-word =
-    .label = Whole Words
-    .accesskey = W
-    .tooltiptext = Search whole words only
+    .label = Entire Words
+    .accesskey = E
+    .tooltiptext = Search entire words only
 
 findbar-not-found = Phrase not found
 
@@ -41,7 +41,7 @@ findbar-wrapped-to-top = Reached end of page, continued from top
 findbar-wrapped-to-bottom = Reached top of page, continued from bottom
 
 findbar-normal-find =
-    .placeholder = Find in page
+    .placeholder = Search in page
 findbar-fast-find =
     .placeholder = Quick find
 findbar-fast-find-links =
@@ -52,7 +52,7 @@ findbar-case-sensitive-status =
 findbar-match-diacritics-status =
     .value = (Matching diacritics)
 findbar-entire-word-status =
-    .value = (Whole words only)
+    .value = (Entire words only)
 
 # Variables:
 #   $current (Number): Index of the currently selected match
